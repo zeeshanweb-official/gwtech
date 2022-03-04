@@ -1,0 +1,149 @@
+https://www.gwtech.us/api/add
+
+{
+    "type": "BLT",
+    "kind": "kind",
+    "str_num":"23",
+    "opt1", "0",
+    "opt2", "0",
+    "opt3", "0",
+    "sum","",
+    "imei","1231313"
+    "local_date":"yyy-MM-dd"
+}
+===========================================================
+METHOD: POST
+https://gw-tech.herokuapp.com/api/add
+Body:
+{
+    "local_date":"1999-07-13",
+    "type": "BLT updated",
+    "kind": "kind",
+    "str_num":"23",
+    "opt1": "0",
+    "opt2": "0",
+    "opt3": "0",
+    "sum":"100",
+    "imei":"1231313"
+}
+response:
+{
+  "message": "Add Operation Created",
+  "add_operation": {
+    "local_date": "1999-07-13T00:00:00.000Z",
+    "type": "BLT",
+    "kind": "kind",
+    "str_num": 23,
+    "opt1": 0,
+    "opt2": 0,
+    "opt3": 0,
+    "sum": 100,
+    "imei": "1231313",
+    "_id": "61e1366d1436953978a735af",
+    "__v": 0
+  }
+}
+====================================================================
+METHOD: GET
+https://gw-tech.herokuapp.com/api/add
+response:
+[
+  {
+    "_id": "61e13628cc49d47fa02d5ae8",
+    "local_date": "1999-07-13T00:00:00.000Z",
+    "type": "BLT",
+    "kind": "kind",
+    "str_num": 23,
+    "opt1": 0,
+    "opt2": 0,
+    "opt3": 0,
+    "sum": 100,
+    "imei": "1231313",
+    "__v": 0
+  },
+  {
+    "_id": "61e1366d1436953978a735af",
+    "local_date": "1999-07-13T00:00:00.000Z",
+    "type": "BLT",
+    "kind": "kind",
+    "str_num": 23,
+    "opt1": 0,
+    "opt2": 0,
+    "opt3": 0,
+    "sum": 100,
+    "imei": "1231313",
+    "__v": 0
+  }
+]
+====================================================================
+https://gw-tech.herokuapp.com/api/add/61e13628cc49d47fa02d5ae8
+MEthod: Get
+response: 
+{
+  "_id": "61e13628cc49d47fa02d5ae8",
+  "local_date": "1999-07-13T00:00:00.000Z",
+  "type": "BLT",
+  "kind": "kind",
+  "str_num": 23,
+  "opt1": 0,
+  "opt2": 0,
+  "opt3": 0,
+  "sum": 100,
+  "imei": "1231313",
+  "__v": 0
+}
+====================================================================
+https://gw-tech.herokuapp.com/api/add/61e13628cc49d47fa02d5ae8
+MEthod: Put
+Body:
+{
+    "local_date":"1999-07-13",
+    "type": "BLT",
+    "kind": "kind",
+    "str_num":"23",
+    "opt1": "0",
+    "opt2": "0",
+    "opt3": "0",
+    "sum":"100",
+    "imei":"1231313"
+}
+response: 
+{
+  "message": "Add Operation Updated",
+  "updatedaddop": {
+    "_id": "61e13628cc49d47fa02d5ae8",
+    "local_date": "1999-07-13T00:00:00.000Z",
+    "type": "BLT",
+    "kind": "kind",
+    "str_num": 23,
+    "opt1": 0,
+    "opt2": 0,
+    "opt3": 0,
+    "sum": 100,
+    "imei": "1231313",
+    "__v": 0
+  }
+}
+
+====================================================================
+https://gw-tech.herokuapp.com/api/add/61e13628cc49d47fa02d5ae8
+MEthod: Delete
+response: 
+{
+  "message": "Add Operation Deleted",
+  "deletedAddOperation": {
+    "_id": "61e13628cc49d47fa02d5ae8",
+    "local_date": "1999-07-13T00:00:00.000Z",
+    "type": "BLT",
+    "kind": "kind",
+    "str_num": 23,
+    "opt1": 0,
+    "opt2": 0,
+    "opt3": 0,
+    "sum": 100,
+    "imei": "1231313",
+    "__v": 0
+  }
+}
+
+

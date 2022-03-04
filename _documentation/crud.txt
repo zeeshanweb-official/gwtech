@@ -1,0 +1,83 @@
+Login
+https://www.gwtech.us/api/connection
+
+{
+    "email": "azan.rabia1@gmail.com",
+    "password": "Rabia.123"
+}
+===========================================================
+METHOD: POST
+https://gw-tech.herokuapp.com/api/connection
+Body:
+{
+    "key": "gw-tech",
+    "password": "12345"
+}
+response:
+{
+  "message": "Connection User Created",
+  "connectionuser": {
+    "key": "gw-tech dev",
+    "password": "$2a$08$o/.DDKyDxCey45eUcPxoneRsizXavMGVAC0rc16LiCVrk4uGCj4ZW",
+    "_id": "61e1292978299d6fb1112e22",
+    "__v": 0
+  }
+}
+====================================================================
+METHOD: GET
+https://gw-tech.herokuapp.com/api/connection
+response:
+[
+  {
+    "_id": "61e128d878299d6fb1112e1c",
+    "key": "gw-tech",
+    "password": "$2a$08$bJoNfPtKS9iOm/sJMjXP2en6u0nQTCcNG7akQinxDDWwobiujJL2O",
+    "__v": 0
+  },
+  {
+    "_id": "61e1292978299d6fb1112e22",
+    "key": "gw-tech dev",
+    "password": "$2a$08$o/.DDKyDxCey45eUcPxoneRsizXavMGVAC0rc16LiCVrk4uGCj4ZW",
+    "__v": 0
+  }
+]
+====================================================================
+https://gw-tech.herokuapp.com/api/connection/61e128d878299d6fb1112e1c
+MEthod: Get
+response: 
+{
+  "_id": "61e128d878299d6fb1112e1c",
+  "key": "gw-tech",
+  "password": "$2a$08$bJoNfPtKS9iOm/sJMjXP2en6u0nQTCcNG7akQinxDDWwobiujJL2O",
+  "__v": 0
+}
+====================================================================
+https://gw-tech.herokuapp.com/api/connection/61e128d878299d6fb1112e1c
+MEthod: Put
+Body:
+{
+    "key": "gw-tech",
+    "password": "12345"
+}
+response: 
+{
+  "_id": "61e128d878299d6fb1112e1c",
+  "key": "gw-tech",
+  "password": "$2a$08$bJoNfPtKS9iOm/sJMjXP2en6u0nQTCcNG7akQinxDDWwobiujJL2O",
+  "__v": 0
+}
+line
+====================================================================
+https://gw-tech.herokuapp.com/api/connection/61e128d878299d6fb1112e1c
+MEthod: Delete
+response: 
+{
+  "_id": "61e128d878299d6fb1112e1c",
+  "key": "gw-tech",
+  "password": "$2a$08$bJoNfPtKS9iOm/sJMjXP2en6u0nQTCcNG7akQinxDDWwobiujJL2O",
+  "__v": 0
+}
+{
+   "key": "123",
+   "password": "dd.123"
+}
